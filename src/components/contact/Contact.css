@@ -1,0 +1,76 @@
+.container-contact{
+    width: 100%;
+    height: aut0;
+}
+
+
+.img-contact{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+
+.header-contact{
+    text-align: center;
+}
+
+.header-contact p{
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+}
+
+.my-form form{
+   display: flex;
+   flex-direction: column;
+}
+
+.my-form form label{
+    margin: 10px auto;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.my-form form input{
+    border-radius: 10px;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 18px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 40%;
+    height: 4rem;
+    margin: auto;
+}
+.my-form form textarea{
+    border-radius: 15px;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 18px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 40%;
+    height: 10rem;
+    margin: auto;
+}
+
+.btn-contact{
+    margin: 30px 30%;
+    width: 40%;
+    cursor: pointer;
+}
+
+
+.shadow-circle-contact{
+    box-shadow: 1px 7px 20px var(--color-primary);
+    margin: auto;
+    top: 1rem;
+    position: relative;
+    border-radius: 50%;
+    z-index: 2;
+    overflow: hidden;
+    background: transparent;
+    height: 3rem;
+    width: 43rem;
+  }

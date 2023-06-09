@@ -1,0 +1,108 @@
+.h1-pengalaman{
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.body-pengalaman{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    background: var(--color-bg);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.container-pengalaman{
+    width: 90%;
+    height: 40rem;
+    margin: auto;
+    overflow-Y: scroll;
+}
+
+
+.number{
+    background: var(--color-primary);
+    color: white;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins' sans-serif;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.content-pengalaman{
+    position: relative;
+    left: -60px;
+    top: 10px;
+}
+
+.content-pengalaman h2{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;  
+}
+
+.container-pengalaman p{
+    font-family: 'Poppins' sans-serif;
+    font-size: 0.8rem;
+    color: gray;
+    left: -79px;
+    position: inherit;
+}
+.container-pengalaman button{
+    top: -35px;
+    left: 50px;
+    float: right;
+    position: relative;
+    width: 40px;
+    border-radius: 10px;
+    background: var(--color-light);
+    color: var(--color-bg);
+    height: 20px;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.container-pengalaman button:hover{
+    background-color: black;
+}
+
+
+@media screen and (max-width: 1024px){
+    .container-pengalaman{
+        height: 10rem;
+        display: flex;
+        gap: 20px;
+        border-radius: 20px;
+    }
+
+    .body-pengalaman{
+        padding: 20px 60px;
+    }
+
+    .number{
+        right: 40px;
+        top: 10px;
+    }
+
+    .content-pengalaman h2{
+        font-size: 20px;
+        display: flex;
+    }
+
+    .container-pengalaman button{
+        left: calc(50% - -1rem);
+        top: -55px;
+    }
+
+}

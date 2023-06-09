@@ -1,0 +1,78 @@
+/* App.css */
+.mySwiper {
+  width: 80%;
+  height: 70%;
+  background: var(--color--bg);
+  z-index: 0;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.swiper-card {
+  height: 100%;
+  background: linear-gradient(var(--color-primary), transparent);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.swiper-card-content{
+  background-color: var(--color-primary-dark);
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 769px;
+  transition: 400ms ease-in-out;
+}
+
+.swiper-card-content.active{
+  height: 8rem;
+}
+
+.swiper-card-body .swiper-card-content:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.swiper-card-body:hover > .swiper-card-content:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+
+.btn-close{
+  position: absolute;
+  width: 2rem;
+  border-radius: 50%;
+  height: 2rem;
+  bottom: 0;
+  left: 0;
+  margin: 20px;
+
+}
+.btn-open{
+  position: absolute;
+  width: 2rem;
+  border-radius: 50%;
+  height: 2rem;
+  bottom: 0;
+  left: 0;
+  margin: 20px;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .mySwiper{
+    height: 40%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mySwiper{
+    height: 30%;
+  }
+}

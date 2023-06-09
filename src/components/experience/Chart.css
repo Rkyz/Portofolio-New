@@ -1,0 +1,43 @@
+h2{
+    color: var(--color-bg);
+    font-weight: 600;
+}
+
+.card-drop-drag{
+    margin: 0 20px;
+    backdrop-filter: blur(20px);
+    height: 70px;
+    border-radius: 0.8rem;
+    padding: 20px 0 20px 0;
+    background: rgba( 0, 0, 0, 0.5);
+}
+
+
+  .container-all {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+  }
+  
+  .container-card-chart {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: auto;
+    max-width: 100%; /* Tambahkan properti max-width */
+
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .container-card-chart {
+      height: 15rem;
+      overflow-y: scroll;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container-card-chart {
+      grid-template-columns: 1fr;
+    }
+  }
+  

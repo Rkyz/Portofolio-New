@@ -1,0 +1,169 @@
+header{
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header_container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+.header_social{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+    align-items: center;
+}
+
+.header_social::after{
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background-color: var(--color-primary);
+}
+
+.me{
+    background: linear-gradient(var(--color-primary),transparent);
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.scroll_down{
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .container{
+        height: 68vh;
+    }
+}
+
+
+@media screen and (max-width: 908px) {
+    header{
+        height: 100vh;
+    }
+    .me{
+        width: 18rem;
+        height: 25rem;
+        left: calc(56% - 11rem);
+    }
+}
+
+
+@media screen and (max-width: 393px) {
+    .header_social{
+        left: -10px;
+    }
+    .me{
+        height: 10rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header_social{
+        left: -10px;
+    }
+    .scroll_down{
+        right: -40px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .me{
+        width: 8rem;
+    }
+    .header_social{
+        left: -20px;
+    }
+}
+
+
+
+@media screen and (max-width: 415px) and (min-width: 413px) {
+    .header_social{
+        bottom: -2rem;
+        left: -0.8rem;
+    }
+
+    .scroll_down{
+        bottom: 3rem;
+        right: -2.5rem;
+    }
+    
+    .me{
+        height: 28rem;
+        width: 19rem;
+    }
+
+}
+
+@media screen and (max-width: 412px) {
+    .header_social{
+        bottom: -4rem;
+        left: -0.6rem;
+    }
+
+    .scroll_down{
+        bottom: 1rem;
+        right: -2.5rem;
+    }
+    
+    .me{
+        height: 28rem;
+        width: 18rem;
+        margin-left: 13px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .header_social{
+        bottom: -4rem;
+        left: -0.6rem;
+    }
+
+    .scroll_down{
+        bottom: 1rem;
+        right: -2.5rem;
+    }
+    
+    .me{
+        height: 28rem;
+        width: 17rem;
+        margin-left: 20px;
+    }
+
+}
+
+
+
+
+
+
+
